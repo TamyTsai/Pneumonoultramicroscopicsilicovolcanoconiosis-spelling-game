@@ -9,7 +9,7 @@ body .bigArea {
 
 body .secondArea {
     background-color: #ff9da7;
-    max-width: 500px;
+    max-width: 497px;
     height: 500px;
     text-align: center;
     padding-bottom: 30px;
@@ -33,6 +33,7 @@ body .bigArea .secondArea #title {
 
 /* 遊戲說明區 */
 body .bigArea .secondArea .instructions {
+    padding: 3px;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
