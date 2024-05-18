@@ -14,6 +14,7 @@ $(document).ready(() => {
 
     $('#restart').click(evt => { //ES6箭頭函式寫法 參數名為evt //以jQuery寫法抓取HTML元素
         evt.preventDefault(); //檔下預設動作
+        inGameOrNot();
         clearInput();
         countDown();
         times ++;
@@ -34,8 +35,10 @@ function countDown() {
         setTimeout(() => {
             if (document.querySelector('#inputArea').value == 'pneumonoultramicroscopicsilicovolcanoconiosis') {
                 reslove('挑戰成功！');
+                $('#inputArea').attr('disabled', true); // 時間到時，輸入框變為不可輸入狀態
             } else {
                 reject('挑戰失敗...');
+                $('#inputArea').attr('disabled', true);
             }
         },10000)
     });
