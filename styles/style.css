@@ -1,0 +1,92 @@
+body {
+    background-color: #fff;
+}
+
+body .bigArea {
+    display: flex;
+    justify-content: center;
+}
+
+body .secondArea {
+    background-color: #ff9da7;
+    max-width: 500px;
+    height: 480px;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+body .bigArea .secondArea #title {
+    font-size: 1.7em;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #540000;
+    color: #fff;
+    border-radius: 7px;
+}
+
+/* 遊戲說明區 */
+body .bigArea .secondArea .instructions {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: dashed;
+    border-radius: 7px;
+}
+
+/* 遊戲開始按鈕 */
+body .bigArea .secondArea .buttons #gameStart {
+    display: block;
+    color: white;
+    background-color: #146496;
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 13px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1.1em;
+    width: 130px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* 輸入區 */
+body .bigArea .secondArea .buttons #inputArea {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 35px;
+}
+
+/* 完成按鈕 */
+body .bigArea .secondArea .buttons #finished {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 400;
+    background-color: #146496;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100px;
+}
+
+body .bigArea .secondArea .hint {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    color: rgb(48, 48, 48);
+}

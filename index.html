@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>火山矽肺病挑戰遊戲</title>
+    <script src="scripts/jquery-3.7.1.min.js"></script> <!-- 引入jQuery -->
+    <link rel="stylesheet" href="styles/style.css"> <!-- 引入自己寫的CSS -->
 </head>
 <body>
-    <div>火山矽肺病挑戰！</div>
-    <section class="instructions">
-        點擊「遊戲開始」後，系統將自動倒數10秒，請於輸入框內輸入火山矽肺病之英文，並點擊完成，系統會判斷你是否有於10秒內送出正確答案，並將挑戰結果顯示於頁面下方
-    </section>
-    <section class="buttons">
-        <input type="button" id="gameStart" value="遊戲開始">
-        <input type="text" id="inputArea" placeholder="請於此輸入火山矽肺病英文">
-        <input type="button" id="finished" value="完成">
-    </section>
-    <section class="hint">
-        <i>火山矽肺病英文為pneumonoultramicroscopicsilicovolcanoconiosis</i>
-        <p>輸入框設定為無法進行貼上功能，不要作弊</p>
-    </section>
-    <section class="result">挑戰結果</section>
+    <div class="bigArea">
+        <div class="secondArea">
+            <h1 id="title">火山矽肺病挑戰！</h1>
+            <section class="instructions">
+                點擊「遊戲開始」後，系統將自動倒數10秒，請於輸入框內輸入火山矽肺病之英文，並點擊完成，系統會判斷你是否有於10秒內送出正確答案，並將挑戰結果顯示於頁面下方
+                <br>
+                <i>(火山矽肺病英文為pneumonoultramicroscopicsilicovolcanoconiosis)</i>
+            </section>
+            <section class="buttons">
+                <input type="button" id="gameStart" value="遊戲開始">
+                <input type="text" id="inputArea" placeholder="請於此輸入火山矽肺病英文" onpaste="return false" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off">
+                <!-- 輸入框onpaste="return false"禁止使用貼上，spellcheck="false"停用拼字檢查，autocomplete="off"關閉自動完成功能，autocorrect="off"停用自動更正，autocapitalize="off"關閉預設首字母大寫（行動裝置）-->
+                <input type="button" id="finished" value="完成">
+            </section>
+            <section class="hint">
+                <p>輸入框已設定為無法進行貼上功能，且停用拼字檢查功能，不要作弊</p>
+            </section>
+            <section class="result"></section>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script> <!-- 引入自己寫的js -->
 </body>
 </html>
