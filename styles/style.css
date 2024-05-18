@@ -10,7 +10,7 @@ body .bigArea {
 body .secondArea {
     background-color: #ff9da7;
     max-width: 500px;
-    height: 480px;
+    height: 500px;
     text-align: center;
     padding-bottom: 30px;
     padding-left: 20px;
@@ -19,9 +19,11 @@ body .secondArea {
     box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
 }
 
+/* 遊戲標題區 */
 body .bigArea .secondArea #title {
     font-size: 1.7em;
     width: 80%;
+    padding: 3px;
     margin-right: auto;
     margin-left: auto;
     background-color: #540000;
@@ -39,7 +41,12 @@ body .bigArea .secondArea .instructions {
     border-radius: 7px;
 }
 
-/* 遊戲開始按鈕 */
+body .bigArea .secondArea .challengeTimes {
+    margin-top: 12px;
+    font-weight: 500;
+}
+
+/* 開始遊戲按鈕 */
 body .bigArea .secondArea .buttons #gameStart {
     display: block;
     color: white;
@@ -57,36 +64,58 @@ body .bigArea .secondArea .buttons #gameStart {
     cursor: pointer;
 }
 
+/* 開始遊戲按鈕的不可按狀態 */
+body .bigArea .secondArea .buttons #gameStart:disabled {
+    background-color: lightgray;
+    cursor: default;
+}
+
 /* 輸入區 */
 body .bigArea .secondArea .buttons #inputArea {
     display: block;
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 10px;
-    width: 400px;
+    width: 300px;
     height: 35px;
 }
 
-/* 完成按鈕 */
-body .bigArea .secondArea .buttons #finished {
+/* 重新挑戰按鈕 */
+body .bigArea .secondArea .buttons #restart {
     display: block;
+    color: white;
+    background-color: #146496;
+    padding: 5px;
     margin-right: auto;
     margin-left: auto;
-    cursor: pointer;
-    font-size: 1.2em;
-    font-weight: 400;
-    background-color: #146496;
-    color: white;
+    margin-top: 13px;
     border-radius: 5px;
-    padding: 5px;
-    width: 100px;
+    font-weight: 400;
+    font-size: 1.1em;
+    width: 130px;
+    text-align: center;
+    cursor: pointer;
 }
 
+/* 重新挑戰按鈕的不可按狀態 */
+body .bigArea .secondArea .buttons #restart:disabled {
+    background-color: lightgray;
+    cursor: default;
+}
+
+/* 提示 */
 body .bigArea .secondArea .hint {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 80%;
+    padding-top: 5px;
+    width: 75%;
     margin-right: auto;
     margin-left: auto;
     color: rgb(48, 48, 48);
 }
+
+/* 挑戰結果 */
+body .bigArea .secondArea .result {
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+
