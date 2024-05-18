@@ -1,0 +1,11 @@
+@media (max-width: 430px) {
+    body .bigArea .secondArea .instructions {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 344px) {
+    body .secondArea {
+        max-width: 290px;
+    }
+}
