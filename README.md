@@ -1,0 +1,63 @@
+## 簡介
+- [Demo Link](https://tamytsai.github.io/Pneumonoultramicroscopicsilicovolcanoconiosis-spelling-game/)
+- 本專案為一個火山矽肺病的英文拼字遊戲，需在時間內於輸入框輸入正確之火山矽肺病英文，方挑戰成功
+- 以HTML、CSS及JavaScript撰寫，為一頁式靜態網頁
+- 應用RWD以使網頁適應各尺寸裝置瀏覽
+- 應用Flexbox技術操縱部分元素
+- 使用ES6、jQuery使JavaScript語法變得簡潔（箭頭函式、簡化DOM控制等）
+- 採用UJS寫法，維持HTML簡潔
+- 運用AJAX promise設計遊戲機制
+
+## 功能
+- 點擊「開始遊戲」，輸入框由不可輸入變為可輸入，且頁面開始倒數10秒
+- 於輸入框輸入火山矽肺病英文，時間結束時，輸入框變為不可輸入，頁面並自動檢查輸入框內文字是否正確，將挑戰結果顯示於頁面下方
+- 頁面初始狀態「開始遊戲」可點擊，「重新挑戰」按鈕為不可點擊；點擊「開始遊戲」後，「開始遊戲」按鈕轉變為不可點擊，「重新挑戰」按鈕變為可點擊
+- 點擊「重新挑戰」按鈕後，輸入框重新變為可輸入，且清除上次輸入結果
+- 輸入框設定為不可貼上、停用拼字檢查、關閉自動完成功能、停用自動更正、關閉預設首字母大寫，以預防作弊，並增進行動裝置使用體驗
+- 頁面根據點擊「開始遊戲」及「重新挑戰」按鈕之次數顯示挑戰次數
+
+## 畫面
+### 初始畫面
+<img width="620" alt="截圖 2024-05-19 初始畫面" src="https://github.com/TamyTsai/Pneumonoultramicroscopicsilicovolcanoconiosis-spelling-game/assets/97825677/01b0d07f-cdf5-4f2b-82c4-fd3543cc0b79">
+
+### 遊戲開始
+<img width="634" alt="截圖 2024-05-19 開始遊戲" src="https://github.com/TamyTsai/Pneumonoultramicroscopicsilicovolcanoconiosis-spelling-game/assets/97825677/2c22b223-faa2-4da7-92df-fc5d2e50a286">
+
+### 挑戰成功
+<img width="650" alt="截圖 2024-05-19 挑戰成功" src="https://github.com/TamyTsai/Pneumonoultramicroscopicsilicovolcanoconiosis-spelling-game/assets/97825677/5b5fa0af-2fc9-4adb-99ad-27acb6801519">
+
+### 挑戰失敗
+<img width="636" alt="截圖 2024-05-19 挑戰失敗" src="https://github.com/TamyTsai/Pneumonoultramicroscopicsilicovolcanoconiosis-spelling-game/assets/97825677/db82404a-b110-48bc-b68b-e3dfaf28b270">
+
+### 行動裝置畫面
+<img width="473" alt="截圖 2024-05-19 行動裝置畫面" src="https://github.com/TamyTsai/Pneumonoultramicroscopicsilicovolcanoconiosis-spelling-game/assets/97825677/9ce8823e-c471-49b9-9bb4-e565cdb98b0c">
+
+
+## 安裝
+### 取得專案
+```bash
+git clone https://github.com/TamyTsai/Pneumonoultramicroscopicsilicovolcanoconiosis-spelling-game.git
+```
+### 移動到專案內
+```bash
+cd BreadcrumbsPneumonoultramicroscopicsilicovolcanoconiosis-spelling-game
+```
+
+## 資料夾及檔案說明
+- scripts - JS檔案放置處
+  - jquery-3.3.1.min.js - jQuery檔案
+  - script.js - 頁面JS檔案，負責網頁功能
+- styles - 樣式放置處
+  - style.css - 頁面樣式檔案
+  - query.css - RWD中斷點設定
+- index.html - 頁面HTML檔
+
+## 專案技術
+- HTML
+- CSS
+  - RWD
+  - Flexbox
+- JavaScript
+  - jQuery v3.7.1
+  - ES6
+  - AJAX
