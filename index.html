@@ -20,8 +20,9 @@
             <section class="challengeTimes">第0次挑戰</section>
             <section class="buttons">
                 <input type="button" id="gameStart" value="開始遊戲">
-                <input type="text" id="inputArea" placeholder="請於此輸入火山矽肺病英文" disabled="disabled" onpaste="return false" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off">
+                <input type="text" id="inputArea" placeholder="請於此輸入火山矽肺病英文" disabled="disabled" inputmode="email" onpaste="return false" spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off">
                 <!-- 輸入框onpaste="return false"禁止使用貼上，spellcheck="false"停用拼字檢查，autocomplete="off"關閉自動完成功能，autocorrect="off"停用自動更正，autocapitalize="off"關閉預設首字母大寫（行動裝置）-->
+                <!-- inputmode="email" 讓行動裝置跳出來的鍵盤一開始就是英文輸入法 -->
                 <input type="button" id="restart" value="重新挑戰" disabled="disabled">
             </section>
             <section class="hint">
