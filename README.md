@@ -41,7 +41,7 @@ git clone https://github.com/TamyTsai/Pneumonoultramicroscopicsilicovolcanoconio
 ```
 ### 移動到專案內
 ```bash
-cd BreadcrumbsPneumonoultramicroscopicsilicovolcanoconiosis-spelling-game
+cd Pneumonoultramicroscopicsilicovolcanoconiosis-spelling-game
 ```
 
 ## 資料夾及檔案說明
