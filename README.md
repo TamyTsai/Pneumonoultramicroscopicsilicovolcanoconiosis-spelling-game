@@ -49,7 +49,7 @@ cd Pneumonoultramicroscopicsilicovolcanoconiosis-spelling-game
   - jquery-3.3.1.min.js - jQuery檔案
   - script.js - 頁面JS檔案，負責網頁功能
 - styles - 樣式放置處
-  - style.css - 頁面樣式檔案
+  - style.css - 樣式檔案
   - query.css - RWD中斷點設定
 - index.html - 頁面HTML檔
 
